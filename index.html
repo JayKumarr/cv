@@ -59,7 +59,7 @@
             <div class="pb-1">Age</div>
           </div>
           <div class="col-sm-8">
-            <div class="pb-1 text-secondary">28</div>
+            <div class="pb-1 text-secondary" id="age-div">  </div>
           </div>
           <div class="col-sm-4">
             <div class="pb-1">Email</div>
@@ -225,4 +225,9 @@
     <script src="scripts/aos.js?ver=1.2.0"></script>
     <script src="scripts/main.js?ver=1.2.0"></script>
   </body>
+    	<script type="text/javascript">
+		var today = new Date();
+		var age = today.getFullYear() - 1992;
+		document.getElementById("age-div").innerHTML = age;
+	</script>
 </html>
